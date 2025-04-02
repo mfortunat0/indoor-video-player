@@ -1,1 +1,1 @@
-# indoor-video-player
+# indoor-browser
