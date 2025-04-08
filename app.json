@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "indoor-browser-ci",
-    "slug": "indoor-browser-ci",
+    "name": "indoor-video-player",
+    "slug": "indoor-video-player",
     "version": "1.0.0",
     "orientation": "landscape",
     "icon": "./assets/icon.png",
@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1C152B"
       },
-      "package": "com.mfortunato.indoorbrowserci"
+      "package": "com.mfortunato.indoorplayervideo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,15 +36,23 @@
       [
         "expo-screen-orientation",
         {
-          "initialOrientation": "DEFAULT"
+          "initialOrientation": "LANDSCAPE_LEFT"
         }
       ],
-      ["expo-build-properties", { "android": { "usesCleartextTraffic": true } }]
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
     ],
     "extra": {
       "eas": {
-        "projectId": "c300b50e-8d7a-4931-ada8-7e45e3a937b7"
+        "projectId": "05a8f31b-b6cd-46fd-aa34-2ea20f951e69"
       }
-    }
+    },
+    "owner": "mfortunato"
   }
 }
