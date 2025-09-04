@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "indoor-video-player",
+    "name": "Triade",
     "slug": "indoor-video-player",
     "version": "1.0.0",
-    "orientation": "landscape",
+    "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#1C152B"
+      "backgroundColor": "#e9e3df"
     },
     "ios": {
       "supportsTablet": true
@@ -18,7 +18,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#1C152B"
+        "backgroundColor": "#e9e3df"
       },
       "package": "com.mfortunato.indoorplayervideo"
     },
@@ -36,7 +36,7 @@
       [
         "expo-screen-orientation",
         {
-          "initialOrientation": "LANDSCAPE_LEFT"
+          "initialOrientation": "PORTRAIT"
         }
       ],
       [
@@ -50,7 +50,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "05a8f31b-b6cd-46fd-aa34-2ea20f951e69"
+        "projectId": "98b830d2-a2c9-495d-8622-66048ae17b05"
       }
     },
     "owner": "mfortunato"
