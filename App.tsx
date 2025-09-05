@@ -1,10 +1,20 @@
 import { StatusBar } from "expo-status-bar";
 import { useVideoPlayer, VideoView } from "expo-video";
 import { StyleSheet, View } from "react-native";
-import { Dimensions } from "react-native";
+import * as ScreenOrientation from "expo-screen-orientation";
+import { useEffect } from "react";
 
 export default function App() {
   const videoSource = require("./assets/video.mp4");
+
+  useEffect(() => {
+    const lockOrientation = async () => {
+      await ScreenOrientation.lockAsync(
+        ScreenOrientation.OrientationLock.LANDSCAPE_LEFT
+      );
+    };
+    lockOrientation();
+  }, []);
 
   const player = useVideoPlayer(videoSource, (player) => {
     player.loop = true;
@@ -26,18 +36,12 @@ export default function App() {
   );
 }
 
-const { width, height } = Dimensions.get("window");
-
 const styles = StyleSheet.create({
   video: {
-    width,
-    height,
-    position: "absolute",
-    top: 0,
-    left: 0,
+    flex: 1,
   },
   container: {
     flex: 1,
-    backgroundColor: "#000",
+    backgroundColor: "#fff",
   },
 });
